@@ -37,6 +37,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+// Ganti cara registrasi plugin dengan anotasi
+@com.mrousavy.camera.frameprocessor.FrameProcessorPlugin(name = "scanCodes")
 public class VisionCameraCodeScannerPlugin extends FrameProcessorPlugin {
   private BarcodeScanner barcodeScanner = null;
   private int barcodeScannerFormatsBitmap = -1;
@@ -248,6 +250,6 @@ public class VisionCameraCodeScannerPlugin extends FrameProcessorPlugin {
 	}
 
   VisionCameraCodeScannerPlugin() {
-    super("scanCodes");
+    // super("scanCodes");
   }
 }
